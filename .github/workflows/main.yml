@@ -45,7 +45,7 @@ jobs:
       - name: send custom message with args
         uses: appleboy/telegram-action@master
         with:
-          to: ${{ secrets.TELEGRAM_TO_DEBUG }}
-          token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
+          to: 943063539
+          token: 1776221595:AAEfjTL8R8i90bAVUGc9jcA9q4mX-Pp-9ss
           message: test_main
           document: my_art/Prime.exe
