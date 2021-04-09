@@ -28,7 +28,7 @@ jobs:
         with:
           name: my_art
           path: "*.exe"
-          
+
       - name: Telegram
         uses: appleboy/telegram-action@0.0.3
         with:
