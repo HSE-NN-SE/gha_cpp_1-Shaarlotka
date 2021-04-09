@@ -1,5 +1,20 @@
 #include <cstring>
 #include <algorithm>
+#include <iostream>
+using namespace std;
+
+class Prime{
+private:
+	int value;
+public:
+	void setValue(int);          
+	bool isValid();
+	bool checkPrime(int);
+	int countBetween(Prime&);
+	Prime nextPrime();
+	int getValue();
+}; 
+
 
 void Prime::setValue(int value){
 	this->value = value;
