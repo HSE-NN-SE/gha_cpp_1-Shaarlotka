@@ -45,4 +45,4 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1.7.0
       - uses: actions/checkout@v1
       - name: build
-        run: cl /EHsc Prime.cpp Prime.h main.cpp /link /out:Prime.exe
+        run: cl /EHsc main.cpp /link /out:Prime.exe
