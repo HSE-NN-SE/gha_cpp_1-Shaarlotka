@@ -35,11 +35,12 @@ jobs:
     needs: main
     steps:
       - uses: actions/download-artifact@v2
-      - uses: actions/checkout@master
+        with:
+          name: my_art
+      - uses: actions/download-artifact@v2
       - name: ls
         run: |
           ls
-          ls my_art/
         
       - name: send custom message with args
         uses: appleboy/telegram-action@master
