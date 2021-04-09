@@ -34,3 +34,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+         
+jobs:
+
+  build:
+    runs-on: windows-latest
+    
+    steps:
+      - uses: ilammy/msvc-dev-cmd@v1.7.0
+      - uses: actions/checkout@v1
+      - name: build
+        run: cl /EHsc Prime.cpp Prime.h main.cpp /link /out:Prime.exe
