@@ -29,9 +29,14 @@ jobs:
           name: my_art
           path: "*.exe"
           
+        
   telega:
     runs-on: ubuntu-latest
     steps:
+    
+      - name: sleep
+        run: sleep 10
+        
       - uses: actions/checkout@master
       - name: send custom message with args
         uses: appleboy/telegram-action@master
