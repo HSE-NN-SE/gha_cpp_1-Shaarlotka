@@ -35,7 +35,7 @@ jobs:
     steps:
     
       - name: sleep
-        run: sleep 10
+        run: sleep 20
         
       - uses: actions/checkout@master
       - name: send custom message with args
@@ -43,5 +43,5 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO_DEBUG }}
           token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
-          document: my_art
+          document: /out:Prime.exe
 
