@@ -36,9 +36,15 @@ jobs:
     steps:
       - uses: actions/download-artifact@v2
       - uses: actions/checkout@master
+      - name: ls
+        run: |
+          ls
+          ls my_art/
+        
       - name: send custom message with args
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO_DEBUG }}
           token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
+          message: test_main
           document: my_art/Prime.exe
