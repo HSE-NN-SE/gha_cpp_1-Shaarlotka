@@ -15,7 +15,7 @@ on:
 
           
 jobs:
-  build:
+  main:
     runs-on: windows-latest
     steps:
       - uses: ilammy/msvc-dev-cmd@v1.7.0
@@ -28,7 +28,10 @@ jobs:
         with:
           name: my_art
           path: "*.exe"
-
+          
+  build:
+    runs-on: ubuntu-latest
+    steps:
       - name: Telegram
         uses: appleboy/telegram-action@0.0.3
         with:
